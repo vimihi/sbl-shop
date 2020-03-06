@@ -1,0 +1,303 @@
+@font-face {
+  font-family: "TT Trailers Medium";
+  src: url("../fonts/TT-Trailers-Medium/TTTrailers-Medium.woff2") format("woff2"), url("../fonts/TT-Trailers-Medium/TTTrailers-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'TT Trailers Bold';
+  src: url("../fonts/TT-Trailers-Bold/TTTrailers-Bold.woff2") format("woff2"), url("../fonts/TT-Trailers-Bold/TTTrailers-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Quicksand';
+  src: url("../fonts/Quicksand/Quicksand-Light.woff2") format("woff2"), url("../fonts/Quicksand/Quicksand-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Quicksand Bold';
+  src: url("../fonts/Quicksand-Bold/Quicksand-Bold.woff2") format("woff2"), url("../fonts/Quicksand-Bold/Quicksand-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Cyberthrone';
+  src: url("../fonts/Cyberthrone/CyberthroneRegular.woff2") format("woff2"), url("../fonts/Cyberthrone/CyberthroneRegular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+:root {
+  --material-red: #F2453D; }
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px; }
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #F8F6ED; }
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; }
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; }
+
+body {
+  background-color: #F8F6ED;
+  position: relative;
+  padding-top: 200px;
+  color: #333; }
+
+#sbl-header {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+  position: absolute;
+  width: 100%;
+  top: 0; }
+
+#sbl-logo {
+  margin-left: 10px; }
+
+#sbl-main-menu {
+  display: inline-block;
+  margin: 0 10px 0 0;
+  list-style: none; }
+  #sbl-main-menu li {
+    float: left;
+    margin-left: 20px;
+    font-size: 24px; }
+
+.sbl-spotlight {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 200px; }
+  .sbl-spotlight .sbl-image-box {
+    position: relative;
+    font-size: 90px; }
+    @media (min-width: 1200px) {
+      .sbl-spotlight .sbl-image-box {
+        font-size: 60px; } }
+    @media (min-width: 1367px) {
+      .sbl-spotlight .sbl-image-box {
+        font-size: 90px; } }
+    .sbl-spotlight .sbl-image-box .sbl-image {
+      max-width: 1000px;
+      max-height: 1000px;
+      border: solid 5px #333;
+      overflow: hidden; }
+      @media (min-width: 1200px) {
+        .sbl-spotlight .sbl-image-box .sbl-image {
+          max-width: 750px;
+          max-height: 750px; } }
+      @media (min-width: 1367px) {
+        .sbl-spotlight .sbl-image-box .sbl-image {
+          max-width: 1000px;
+          max-height: 1000px; } }
+      .sbl-spotlight .sbl-image-box .sbl-image img {
+        width: 100%; }
+    .sbl-spotlight .sbl-image-box .sbl-spotlight-content {
+      position: absolute;
+      font-family: "TT Trailers Bold", sans-serif;
+      font-weight: bold;
+      top: 190px;
+      left: -250px; }
+      @media (min-width: 1200px) {
+        .sbl-spotlight .sbl-image-box .sbl-spotlight-content {
+          left: -165px; } }
+      @media (min-width: 1367px) {
+        .sbl-spotlight .sbl-image-box .sbl-spotlight-content {
+          left: -250px; } }
+      .sbl-spotlight .sbl-image-box .sbl-spotlight-content .sbl-category {
+        font-size: 1em;
+        color: #fff;
+        padding: 10px 35px 0 35px;
+        line-height: 1;
+        border-radius: 5px;
+        background-color: #333;
+        display: table; }
+        @media (min-width: 1200px) {
+          .sbl-spotlight .sbl-image-box .sbl-spotlight-content .sbl-category {
+            padding: 10px 22px 0 22px; } }
+        @media (min-width: 1367px) {
+          .sbl-spotlight .sbl-image-box .sbl-spotlight-content .sbl-category {
+            padding: 10px 35px 0 35px; } }
+      .sbl-spotlight .sbl-image-box .sbl-spotlight-content .sbl-main-content {
+        color: #333;
+        font-size: 3em;
+        line-height: 1; }
+      .sbl-spotlight .sbl-image-box .sbl-spotlight-content .sbl-sub-content {
+        color: #333;
+        font-size: 0.89em;
+        text-align: right;
+        line-height: 1;
+        margin-top: -50px; }
+        @media (min-width: 1200px) {
+          .sbl-spotlight .sbl-image-box .sbl-spotlight-content .sbl-sub-content {
+            margin-top: -35px; } }
+        @media (min-width: 1367px) {
+          .sbl-spotlight .sbl-image-box .sbl-spotlight-content .sbl-sub-content {
+            margin-top: -50px; } }
+      .sbl-spotlight .sbl-image-box .sbl-spotlight-content .sbl-btn-view-more {
+        font-size: 0.56em;
+        color: #333;
+        border: solid 5px #333;
+        border-radius: 5px;
+        line-height: 1;
+        padding: 5px 35px 7px 35px;
+        background-color: white;
+        text-decoration: none;
+        display: table;
+        margin-top: 20px; }
+        @media (min-width: 1200px) {
+          .sbl-spotlight .sbl-image-box .sbl-spotlight-content .sbl-btn-view-more {
+            padding: 10px 25px 7px 25px; } }
+        @media (min-width: 1367px) {
+          .sbl-spotlight .sbl-image-box .sbl-spotlight-content .sbl-btn-view-more {
+            padding: 10px 25px 7px 25px; } }
+
+#sbl-dashed-line {
+  width: 90%;
+  height: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 70px;
+  background-image: url("../images/dashed-line.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center; }
+
+#sbl-feature-title {
+  font-family: "Quicksand Bold", sans-serif;
+  font-size: 90px;
+  margin-left: 180px; }
+  #sbl-feature-title .sbl-title-1 {
+    line-height: 1; }
+  #sbl-feature-title .sbl-title-2 {
+    line-height: 1;
+    margin-bottom: 60px; }
+    #sbl-feature-title .sbl-title-2 .sbl-love {
+      font-family: "Cyberthrone", sans-serif;
+      font-size: 120px;
+      color: var(--material-red); }
+
+.sbl-feature-list {
+  margin-bottom: 200px; }
+
+.sbl-feature-slider {
+  width: 90%;
+  margin: 0 auto; }
+  .sbl-feature-slider .sbl-slider-item {
+    width: 500px;
+    height: 600px;
+    background-color: #E0D4C5;
+    border: solid #333 3px; }
+    .sbl-feature-slider .sbl-slider-item .sbl-feature-img {
+      width: 250px;
+      height: 250px;
+      margin: 35px auto 35px auto; }
+      .sbl-feature-slider .sbl-slider-item .sbl-feature-img img {
+        max-width: 250px;
+        max-height: 250px; }
+    .sbl-feature-slider .sbl-slider-item .sbl-item-category {
+      height: 65px;
+      width: 170px;
+      background-color: #333;
+      border-radius: 5px;
+      margin: 0 auto 0 auto;
+      text-align: center;
+      color: white;
+      font-family: "TT Trailers Bold", sans-serif;
+      font-size: 50px;
+      line-height: 65px; }
+    .sbl-feature-slider .sbl-slider-item .sbl-item-title {
+      color: #333;
+      font-family: "TT Trailers Bold", sans-serif;
+      font-size: 90px;
+      line-height: 117px;
+      text-transform: uppercase;
+      text-align: center;
+      margin: 0 auto 0 auto; }
+    .sbl-feature-slider .sbl-slider-item .sbl-item-price {
+      color: #333;
+      font-family: "TT Trailers Medium", sans-serif;
+      font-size: 60px;
+      line-height: 78px;
+      margin: 0 auto 0 auto;
+      text-align: center;
+      letter-spacing: 0.1em; }
+  .sbl-feature-slider .slick-prev:before, .sbl-feature-slider .slick-next:before {
+    color: #333;
+    font-size: 35px; }
+  .sbl-feature-slider .slick-prev {
+    left: -50px; }
+  .sbl-feature-slider .slick-next {
+    right: -35px; }
+
+.slick-slide {
+  margin: 0 10px; }
+
+.sbl-footer .sbl-footer-info {
+  margin-bottom: 50px; }
+  .sbl-footer .sbl-footer-info .sbl-footer-newsletter .sbl-newsletter-title {
+    font-family: "Quicksand Bold", sans-serif;
+    font-size: 25px;
+    text-transform: uppercase; }
+  .sbl-footer .sbl-footer-info .sbl-footer-newsletter .sbl-newsletter-icon i {
+    font-size: 70px; }
+  .sbl-footer .sbl-footer-info .sbl-footer-others .sbl-footer-others-title {
+    font-family: "Quicksand Bold", sans-serif;
+    font-size: 25px;
+    text-transform: uppercase; }
+  .sbl-footer .sbl-footer-info .sbl-footer-others .sbl-footer-others-content {
+    font-family: "Quicksand", sans-serif;
+    font-size: 25px;
+    text-transform: uppercase; }
+
+.sbl-footer .sbl-discount p {
+  font-family: "Quicksand", sans-serif;
+  font-size: 25px;
+  text-transform: uppercase; }
+  .sbl-footer .sbl-discount p span {
+    font-family: "Quicksand Bold", sans-serif; }
+
+.sbl-footer .sbl-footer-bottom {
+  margin-bottom: 20px; }
+  .sbl-footer .sbl-footer-bottom .sbl-footer-email .sbl-email-block {
+    width: 75%;
+    display: inline-block;
+    position: relative; }
+    .sbl-footer .sbl-footer-bottom .sbl-footer-email .sbl-email-block input {
+      font-family: "Quicksand", sans-serif;
+      height: 80px;
+      width: 100%;
+      background: none;
+      border: solid 1px #333;
+      border-radius: 5px;
+      padding-left: 10px;
+      padding-right: 120px;
+      font-size: 25px; }
+    .sbl-footer .sbl-footer-bottom .sbl-footer-email .sbl-email-block button {
+      font-family: "Quicksand Bold", sans-serif;
+      font-size: 25px;
+      position: absolute;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      height: 100%;
+      background: none;
+      width: 120px;
+      border: none; }
+  .sbl-footer .sbl-footer-bottom .sbl-footer-copyright {
+    font-family: "Quicksand", sans-serif;
+    font-size: 20px;
+    display: flex;
+    align-items: center; }
+    .sbl-footer .sbl-footer-bottom .sbl-footer-copyright p {
+      margin: 0; }

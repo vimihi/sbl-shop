@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'TT Trailers';
+    src: url('TTTrailers-Bold.woff2') format('woff2'),
+        url('TTTrailers-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
