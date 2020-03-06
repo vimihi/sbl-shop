@@ -19,7 +19,7 @@
 <section id="sbl-header">
     <!-- LOGO -->
     <div id="sbl-logo">
-        <img src="images/logo.png" height="286" width="79"/>
+        <img src="images/logo.png" />
     </div>
     <!-- NAV -->
     <div id="sbl-nav">
