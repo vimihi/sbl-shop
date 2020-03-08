@@ -75,14 +75,62 @@ body {
   #sbl-logo img {
     width: 100%; }
 
-#sbl-main-menu {
+#menu-menu-top {
   display: inline-block;
   margin: 0 10px 0 0;
   list-style: none; }
-  #sbl-main-menu li {
+  #menu-menu-top > .menu-item {
+    padding-bottom: 10px; }
+  #menu-menu-top .menu-item {
     float: left;
     margin-left: 20px;
     font-size: 24px; }
+    #menu-menu-top .menu-item a {
+      text-decoration: none;
+      color: #333; }
+    #menu-menu-top .menu-item:hover > a {
+      color: #A3967F;
+      transition: ease-in-out 0.25s; }
+  #menu-menu-top .current-menu-item > a {
+    font-weight: bold;
+    color: #A3967F; }
+  #menu-menu-top .menu-item-has-children {
+    position: relative; }
+    #menu-menu-top .menu-item-has-children .sub-menu {
+      display: inline-block;
+      width: 220px;
+      list-style: none;
+      padding: 0 30px;
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: white;
+      border: solid #333 3px;
+      border-radius: 5px;
+      visibility: hidden;
+      z-index: -1;
+      height: 0;
+      overflow: hidden;
+      transition: linear 0.25s; }
+      #menu-menu-top .menu-item-has-children .sub-menu .menu-item {
+        clear: both;
+        margin-left: 0;
+        font-weight: normal;
+        text-align: center;
+        width: 100%;
+        text-transform: uppercase;
+        font-size: 18px;
+        padding: 10px 0 10px 0; }
+        #menu-menu-top .menu-item-has-children .sub-menu .menu-item a {
+          display: block; }
+        #menu-menu-top .menu-item-has-children .sub-menu .menu-item:not(:last-child) {
+          border-bottom: solid 1px #333; }
+    #menu-menu-top .menu-item-has-children:hover .sub-menu {
+      opacity: 1;
+      visibility: visible;
+      z-index: 99;
+      height: 150px; }
 
 .sbl-spotlight {
   display: flex;

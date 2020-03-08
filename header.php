@@ -23,10 +23,27 @@
     </div>
     <!-- NAV -->
     <div id="sbl-nav">
-        <ul id="sbl-main-menu">
-            <li>NEW</li>
-            <li>CATEGORIES</li>
-            <li>COLLECTION</li>
+        <ul id="menu-menu-top" class="navbar-nav">
+            <li class="menu-item">
+                <a href="#">NEW</a>
+            </li>
+            <li class="menu-item current-menu-item current-menu-parent menu-item-has-children">
+                <a href="#">CATEGORIES</a>
+                <ul class="sub-menu">
+                    <li class="menu-item current-menu-item">
+                        <a href="#">Man</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#">Woman</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#">Woman</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="menu-item">
+                <a href="#">COLLECTION</a>
+            </li>
         </ul>
     </div>
 </section>
