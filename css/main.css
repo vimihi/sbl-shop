@@ -75,6 +75,9 @@ body {
   #sbl-logo img {
     width: 100%; }
 
+#sbl-nav {
+  display: table; }
+
 #menu-menu-top {
   display: inline-block;
   margin: 0 10px 0 0;
@@ -399,25 +402,26 @@ body {
       margin: 0; }
 
 .sbl-spotlight-details-header {
-  max-width: 1000px;
   font-family: "TT Trailers Bold", sans-serif;
-  font-size: 90px;
   display: flex;
   flex-direction: column; }
   @media (min-width: 768px) {
     .sbl-spotlight-details-header {
-      min-width: 600px; } }
+      max-width: 600px;
+      font-size: 50px; } }
   @media (min-width: 1200px) {
     .sbl-spotlight-details-header {
-      min-width: 750px; } }
+      max-width: 750px;
+      font-size: 80px; } }
   @media (min-width: 1367px) {
     .sbl-spotlight-details-header {
-      min-width: 1000px; } }
-  .sbl-spotlight-details-header .sbl-back-category {
+      max-width: 1000px;
+      font-size: 90px; } }
+  .sbl-spotlight-details-header .sbl-details-box {
     display: flex;
     align-items: flex-end;
     justify-content: flex-end; }
-    .sbl-spotlight-details-header .sbl-back-category .sbl-btn-back {
+    .sbl-spotlight-details-header .sbl-details-box .sbl-btn-back {
       font-size: 0.56em;
       color: #333;
       border: solid 5px #333;
@@ -427,17 +431,18 @@ body {
       background-color: white;
       text-decoration: none;
       display: inline-block;
-      margin-top: 20px; }
+      margin-top: 20px;
+      z-index: 98; }
       @media (min-width: 768px) {
-        .sbl-spotlight-details-header .sbl-back-category .sbl-btn-back {
+        .sbl-spotlight-details-header .sbl-details-box .sbl-btn-back {
           font-size: 0.4em;
-          padding: 10px 10px 7px 10px; } }
+          padding: 5px 10px 3px 10px; } }
       @media (min-width: 1200px) {
-        .sbl-spotlight-details-header .sbl-back-category .sbl-btn-back {
+        .sbl-spotlight-details-header .sbl-details-box .sbl-btn-back {
           font-size: 0.56em;
           padding: 10px 25px 7px 25px; } }
       @media (min-width: 1367px) {
-        .sbl-spotlight-details-header .sbl-back-category .sbl-btn-back {
+        .sbl-spotlight-details-header .sbl-details-box .sbl-btn-back {
           padding: 10px 30px 3px 30px; } }
   .sbl-spotlight-details-header .sbl-details-category {
     font-size: 1em;
@@ -479,6 +484,8 @@ body {
       width: 100%; }
   .sbl-spotlight-details-header .slider-for {
     margin-bottom: 35px; }
+  .sbl-spotlight-details-header .slider-nav {
+    margin-bottom: 75px; }
   .sbl-spotlight-details-header .slick-prev:before, .sbl-spotlight-details-header .slick-next:before {
     color: #333;
     font-size: 35px; }
@@ -486,3 +493,30 @@ body {
     left: -50px; }
   .sbl-spotlight-details-header .slick-next {
     right: -35px; }
+  .sbl-spotlight-details-header .sbl-details-price {
+    font-family: "TT Trailers Medium", sans-serif;
+    font-size: 1.34em;
+    width: 100%;
+    text-align: center;
+    letter-spacing: 0.1em;
+    line-height: 1; }
+
+.sbl-details-content {
+  font-family: "Quicksand", sans-serif;
+  font-size: 25px;
+  padding: 55px;
+  background: #FFFFFF;
+  border: 5px solid #000000;
+  box-sizing: border-box; }
+  @media (min-width: 768px) {
+    .sbl-details-content {
+      max-width: 900px; } }
+  @media (min-width: 1200px) {
+    .sbl-details-content {
+      max-width: 1250px; } }
+  @media (min-width: 1367px) {
+    .sbl-details-content {
+      max-width: 1500px; } }
+
+.sbl-mb-50 {
+  margin-bottom: 50px; }
