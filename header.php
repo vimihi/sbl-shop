@@ -15,6 +15,11 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
+<!-- LOADER -->
+<div class="loader-wrapper">
+    <span class="loader"><span class="loader-inner"></span></span>
+</div>
+
 <!-- HEADER -->
 <section id="sbl-header">
     <!-- LOGO -->

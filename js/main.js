@@ -1,11 +1,20 @@
 $(document).ready(function () {
+    
+    setTimeout(function () {
+        const body = document.body;
+        body.style.position = 'relative';
+        $(".loader-wrapper").fadeOut("slow");
+    }, 2000);
+
     $('.sbl-feature-slider').slick({
         arrows: true,
         speed: 300,
         slidesToShow: 3,
         variableWidth: true,
         infinite: true,
-        centerMode: true
+        centerMode: true,
+        autoplay: true,
+        autoplaySpeed: 2000,
     });
 
     $('.slider-for').slick({
